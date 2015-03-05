@@ -27,7 +27,7 @@ Exemplo:
 * <code>get</code> - Valores passados por <code>GET</code>
 * <code>post</code> - Valores passados por <code>POST</code> que estiverem em formato serializado
 * <code>delete</code> - Valores passados por <code>DELETE</code> que estiverem em formato serializado
-* <code>headerBodyJson</code> - Valores passados por stream no format JSON.
+* <code>headerBodyJson</code> - JSON passado pelo corpo do cabeçalho, o <code>$http</code> do <a href="https://angularjs.org/" target="_blank">Angularjs</a> por exemplo sempre passa dados através este formato.
 
 Exemplo de uso: <code>$this->request->get['nome']</code> ou <code>$this->request->post['nome']</code>.
 
