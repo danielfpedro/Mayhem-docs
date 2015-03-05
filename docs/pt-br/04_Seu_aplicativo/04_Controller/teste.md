@@ -36,14 +36,15 @@ Toda requisição feita ao seu <em>Webservice</em> espera uma resposta contento 
 
 ### Resposta de sucesso
 Este método recebe apenas um parametro que é aonde você deverá colocar os dados da resposta, ele automaticamente retorna o <code>status</code> igual a <code>200 </code>
-	
+	...
 	return $this->Response->success($artigos);
+	...
 
 ### Resposta de erro
-Este método recebe três parametros sendo eles, o <code>código de status</code>, <code>descrição</code> e <code>tipo de erro</code> sendo que o último é opcional tendo <code>error</code> como o seu valor<code>default</code>.
-
-
-	return $this->Response->error(400, 'Não foi possível salvar as suas informações');
+Este método recebe três parametros sendo eles, o <code>código de status</code>, descrição e tipo de erro sendo que o último é opcional tendo <code>default</code> o valor <code>error</code>;
+	...
+	$this->Response->error(400, 'Não foi possível salvar as suas informações');
+	...
 
 Exemplo dos dois:
 	//src/Controller/ArtigosController.php
